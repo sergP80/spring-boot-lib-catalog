@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import ua.edu.chmnu.ki.network.lib.dto.ErrorDTO;
+import ua.edu.chmnu.ki.network.lib.web.dto.ErrorDTO;
 import ua.edu.chmnu.ki.network.lib.error.CatalogException;
 
 @ControllerAdvice

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import ua.edu.chmnu.ki.network.lib.dto.CatalogDTO;
+import ua.edu.chmnu.ki.network.lib.web.dto.CatalogDTO;
 import ua.edu.chmnu.ki.network.lib.service.CatalogService;
 
 import javax.validation.Valid;
@@ -34,7 +34,7 @@ public class CatalogApiImpl implements CatalogApi {
 
     @PostMapping("/catalog")
     @Override
-    public void add(@Valid @RequestBody CatalogDTO catalog) {
-        catalogService.create(catalog);
+    public CatalogDTO add(@Valid @RequestBody CatalogDTO catalog) {
+        return catalogService.create(catalog);
     }
 }

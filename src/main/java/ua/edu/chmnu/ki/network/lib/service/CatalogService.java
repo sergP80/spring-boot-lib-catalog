@@ -1,6 +1,6 @@
 package ua.edu.chmnu.ki.network.lib.service;
 
-import ua.edu.chmnu.ki.network.lib.dto.CatalogDTO;
+import ua.edu.chmnu.ki.network.lib.web.dto.CatalogDTO;
 
 import java.util.List;
 
@@ -11,5 +11,5 @@ public interface CatalogService {
 
     boolean existById(Integer id);
 
-    void create(CatalogDTO catalog);
+    CatalogDTO create(CatalogDTO catalog);
 }

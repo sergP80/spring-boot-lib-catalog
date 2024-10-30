@@ -1,6 +1,6 @@
 package ua.edu.chmnu.ki.network.lib.web;
 
-import ua.edu.chmnu.ki.network.lib.dto.CatalogDTO;
+import ua.edu.chmnu.ki.network.lib.web.dto.CatalogDTO;
 
 import java.util.List;
 
@@ -10,5 +10,5 @@ public interface CatalogApi {
 
     List<CatalogDTO> getAll();
 
-    void add(CatalogDTO catalog);
+    CatalogDTO add(CatalogDTO catalog);
 }

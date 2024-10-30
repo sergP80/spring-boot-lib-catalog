@@ -1,4 +1,4 @@
-package ua.edu.chmnu.ki.network.lib.dto;
+package ua.edu.chmnu.ki.network.lib.web.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
