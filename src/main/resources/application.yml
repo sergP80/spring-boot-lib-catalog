@@ -9,5 +9,11 @@ spring:
     username: ${DB_USER:admin-user}
     password: ${DB_PASSWORD:admin123}
 
+  liquibase:
+    enabled: true
+    change-log: "classpath:/changelog/master.xml"
+    driver-class-name: org.postgresql.Driver
+    contexts: dev
+
 server:
-  port: 9088
+  port: 9068

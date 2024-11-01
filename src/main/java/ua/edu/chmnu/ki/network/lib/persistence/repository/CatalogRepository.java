@@ -1,16 +1,9 @@
 package ua.edu.chmnu.ki.network.lib.persistence.repository;
 
-import ua.edu.chmnu.ki.network.lib.web.dto.CatalogDTO;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import ua.edu.chmnu.ki.network.lib.persistence.entity.Catalog;
 
-import java.util.List;
-import java.util.Optional;
-
-public interface CatalogRepository {
-    Optional<CatalogDTO> findById(Integer id);
-
-    List<CatalogDTO> findAll();
-
-    boolean existById(Integer id);
-
-    CatalogDTO save(CatalogDTO catalog);
+@Repository
+public interface CatalogRepository extends JpaRepository<Catalog, Integer> {
 }
